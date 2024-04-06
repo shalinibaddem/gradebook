@@ -1,0 +1,46 @@
+/* styles/styles.css */
+
+/* Main component */
+.main {
+  margin-top: 20px;
+  background-color: rgb(244, 178, 91);
+}
+
+/* Sorting buttons */
+.main button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgb(244, 178, 91);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgb(244, 178, 91);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: rgb(244, 178, 91);
+}
+
+/* Highlight selected row */
+tr.selected {
+  background-color: rgb(109, 203, 234);
+}
+
+/* Details container */
+.details-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(244, 178, 91);
+  border: 1px solid #ddd;
+  padding: 20px;
+  z-index: 999;
+}

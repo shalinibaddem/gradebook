@@ -1,0 +1,21 @@
+/* styles/styles.css */
+.app {
+    margin: 6px;
+    background-color: rgb(241, 201, 115);
+  }
+  
+  table {
+    width: 90%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #033ea4;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  tr.selected {
+    background-color: lightblue;
+  }
+  
