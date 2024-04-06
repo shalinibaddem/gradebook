@@ -4,7 +4,7 @@ import React from 'react';
 const Details = ({ student }) => {
   return (
     <div className="details">
-      <h2>Student Details</h2>
+      <h2 text align="center" style={{backgroundColor:"  rgb(40, 93, 116)"}}>Student Details</h2>
       <p><strong>Name:</strong> {student.name}</p>
       <p><strong>Ticket's Number:</strong> {student.ticketNumber}</p>
       <p><strong>Ticket's Topic:</strong> {student.ticketTopic}</p>
