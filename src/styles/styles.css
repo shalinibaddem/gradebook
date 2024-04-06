@@ -1,7 +1,7 @@
 /* styles/styles.css */
 .app {
     margin: 6px;
-    background-color: rgb(241, 201, 115);
+    background-color: rgb(87, 175, 213);
   }
   
   table {
@@ -16,6 +16,6 @@
   }
   
   tr.selected {
-    background-color: lightblue;
+    background-color: rgb(176, 255, 234);
   }
   
