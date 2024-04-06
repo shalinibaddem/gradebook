@@ -3,7 +3,7 @@
 /* Main component */
 .main {
   margin-top: 20px;
-  background-color: rgb(244, 178, 91);
+  background-color: rgb(130, 130, 130);
 }
 
 /* Sorting buttons */
@@ -44,3 +44,4 @@ tr.selected {
   padding: 20px;
   z-index: 999;
 }
+
