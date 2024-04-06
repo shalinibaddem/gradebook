@@ -1,23 +1,23 @@
 // components/Main.js
 import React, { useState } from 'react';
 import Student from './Student';
-import Details from './Details'; // Import the Details component
+import Details from './Details'; 
 
 const Main = ({ students, setStudents }) => {
   const [selectedRow, setSelectedRow] = useState(null);
-  const [showDetails, setShowDetails] = useState(false); // State to manage Details visibility
-  const [sortedStudents, setSortedStudents] = useState([...students]); // State to hold sorted students
-  const [alphabeticalOrder, setAlphabeticalOrder] = useState("asc"); // State to track alphabetical order
-  const [finalGradeOrder, setFinalGradeOrder] = useState("asc"); // State to track final grade order
+  const [showDetails, setShowDetails] = useState(false); 
+  const [sortedStudents, setSortedStudents] = useState([...students]); 
+  const [alphabeticalOrder, setAlphabeticalOrder] = useState("asc"); 
+  const [finalGradeOrder, setFinalGradeOrder] = useState("asc"); 
 
   const handleRowClick = (index) => {
     setSelectedRow(index);
-    setShowDetails(true); // Show Details when a row is clicked
+    setShowDetails(true); 
   };
 
   const handleCloseDetails = () => {
-    setShowDetails(false); // Close Details when clicked outside
-    setSelectedRow(null); // Clear selected row
+    setShowDetails(false); 
+    setSelectedRow(null); 
   };
 
   const sortAlphabetically = () => {
@@ -46,9 +46,10 @@ const Main = ({ students, setStudents }) => {
         <button onClick={sortAlphabetically}>
           {`Sort Alphabetically ${alphabeticalOrder === "asc" ? "Ascending" : "Descending"}`}
         </button>
+       <span>
         <button onClick={sortFinalGrade}>
           {`Sort by Final Grade ${finalGradeOrder === "asc" ? "Ascending" : "Descending"}`}
-        </button>
+        </button></span>
       </div>
       <table>
         <thead>
@@ -76,7 +77,7 @@ const Main = ({ students, setStudents }) => {
           ))}
         </tbody>
       </table>
-      {/* Render Details component if showDetails is true */}
+     
       {showDetails && (
         <div className="details-container" onClick={handleCloseDetails}>
           <Details student={sortedStudents[selectedRow]} />
