@@ -10,7 +10,7 @@ const Statistics = ({ students }) => {
 
   return (
     <div className="statistics">
-      <h2>Statistics</h2>
+      <h2 text align="center" style={{backgroundColor:"  rgb(40, 93, 116)"}}>Statistics</h2>
       <p>Number of passed students: {passedStudents.length}</p>
       <p>Number of failed students: {failedStudents.length}</p>
       <p>Average grade: {averageGrade.toFixed(2)}</p>
