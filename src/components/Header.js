@@ -3,9 +3,9 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div className="header">
-      <h1>Gradebook Project</h1>
-      {/* Add more header information as needed */}
+    <div className="header"  >
+      <h1 text align="center" style={{backgroundColor:"  rgb(41, 93, 116)"}}>Gradebook Project</h1>
+     
     </div>
   );
 };
