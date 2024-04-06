@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className="footer">
-      <p>Signature & Date</p>
+      <p style={{backgroundColor:"  rgb(41, 93, 116)"}}><b>Signature & Date : B.Shalini / 06-04-2024</b></p>
     </div>
   );
 };
